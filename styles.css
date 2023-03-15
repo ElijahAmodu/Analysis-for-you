@@ -1,6 +1,13 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+}
+
+#nav-logo h2{
+    margin: 30px;
+    padding-right: 50px;
+
 }
 
 #nav-bar{
@@ -10,16 +17,53 @@
     color: white;
 }
 
+#nav-list{
+    justify-items: center;
+}
+
 #nav-bar #nav-list{
-    width: 50%;
-    margin: 0 auto;
+    width: 88%;
+    /* margin: 0 auto; */
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    float: left; 
+    /* align-items: center; */
+    /* float: left;  */
     list-style: none;
+    font-size: 25px;
     
+}
+
+#nav-bar .nav-li{
+    display: inline-block;
+    padding: 20px 40px 15px 40px;
+    margin-left: 100px;
+    margin-right: -20px;
+}
+
+#nav-bar .nav-li:hover{
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#button{
+    color: white;
+    display: flex;
+    justify-content: end;
+    border: none;
+    float: right; 
+    margin: 25px; 
+    padding: 10px 15px;
+    background-color: rgb(66, 66, 206);
+    border-radius: 5px;
+    size: 30px;
+    font-size: 20px;
+    font-weight: 60;
+}
+
+#button:hover{
+    background-color: rgb(66, 58, 130);
 }
 
   

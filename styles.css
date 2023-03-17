@@ -5,17 +5,24 @@
     box-sizing: border-box;
 }
 
-#nav-logo h2{
-    margin: 1.5vw;
-    padding-right: 2.5vw;
-    padding-top: 3vw;
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
+#nav-logo h2{
+    margin: 0.5vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
 }
 
 #nav-bar{
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    /* background-color: black; */
+    background-image: linear-gradient(rgb(11, 11, 11), rgb(21, 21, 21),  rgb(79, 79, 79), rgb(113, 113, 113));
     color: white;
 }
 
@@ -44,9 +51,9 @@
 }
 
 #nav-bar .nav-li:hover{
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(85, 85, 85);
     border-radius: 0.5vw;
-    padding: 1vw;
+    /* padding: 1vw; */
 }
 
 #button{
@@ -55,12 +62,14 @@
     justify-content: end;
     border: none;
     float: right; 
-    margin: 1.25vw; 
-    padding: 0.5vw 0.75px;
+    margin-right: 3vw;
+    margin-top: 0.9vw;
+    /* margin: 1.25vw;  */
+    padding: 0.5vw;
     background-color: rgb(66, 66, 206);
     border-radius: 0.25vw;
     size: 1vw;
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-weight: 60;
 }
 
@@ -68,18 +77,27 @@
     background-color: rgb(66, 58, 130);
 }
 
-/* For mobile*/
-@media (max-width: 768px){
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    
-        body{
-            color: red;
-        }
-    }
+
+video{
+    margin-top: -1vw;
+    position: relative;
+    height: 56vw;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+#explanation{
+    position: relative;
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+ 
+
 
   
 
